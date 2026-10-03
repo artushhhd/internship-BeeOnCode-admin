@@ -74,6 +74,13 @@ Install dependencies:
 npm install
 ~~~
 
+<img width="1919" height="912" alt="image" src="https://github.com/user-attachments/assets/c31b16e1-f746-4588-86ec-c1dbef691987" />
+<img width="1919" height="905" alt="image" src="https://github.com/user-attachments/assets/e73391f9-bdfa-4f0a-833c-b1c105651eca" />
+<img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/9e87a5b8-c64f-4dd4-b737-67700c875b35" />
+
+
+
+
 Start the development server:
 
 ~~~bash
