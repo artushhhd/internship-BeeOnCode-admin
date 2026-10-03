@@ -1,0 +1,17 @@
+const aliases = (prefix = `src`) => ({
+  '@api': `${prefix}/@api`,
+  '@fuse': `${prefix}/@fuse`,
+  '@helpers': `${prefix}/@helpers`,
+  '@history': `${prefix}/@history`,
+  '@lodash': `${prefix}/@lodash`,
+  '@mock-api': `${prefix}/@mock-api`,
+  'app/store': `${prefix}/app/store`,
+  'app/shared-components': `${prefix}/app/shared-components`,
+  'app/configs': `${prefix}/app/configs`,
+  'app/theme-layouts': `${prefix}/app/theme-layouts`,
+  'app/AppContext': `${prefix}/app/AppContext`,
+  'fuse/shared-components': `${prefix}/app/theme-layouts/shared-components`,
+  '@styles': `${prefix}/styles`,
+});
+
+module.exports = aliases;
