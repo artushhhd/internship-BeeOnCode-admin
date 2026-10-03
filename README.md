@@ -1,44 +1,93 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BeeOnCode Internship — Admin Panel
 
-## Available Scripts
+React admin-panel work completed during my BeeOnCode internship.
 
-In the project directory, you can run:
+This repository contains the internship application based on the **Fuse React Admin** template. The template provides the initial application structure and UI foundation; my work focuses on implementing and integrating assigned functionality within that codebase.
 
-### `npm start`
+## Internship Work
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Services
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The implemented Services area covers the service-management workflow, including:
 
-### `npm run test`
+- Service list loading
+- Add service
+- Edit service
+- Delete service
+- Publish / unpublish state
+- Service ordering
+- Form validation
+- Image/icon integration
+- API integration with the provided backend
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running questionnaires](https://facebook.github.io/create-react-app/docs/running-questionnaires) for more information.
+The implementation uses the existing application's React architecture and backend contract rather than presenting the template itself as original work.
 
-### `npm run run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- JavaScript
+- Fuse React
+- REST API
+- Fetch / HTTP API integration
+- Git
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Repository Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The project follows the structure of the provided Fuse React application:
 
-### `npm run eject`
+~~~text
+src/
+├── app/
+├── components/
+├── auth/
+└── ...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+public/
+package.json
+~~~
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The exact structure may evolve as internship tasks are added.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## API Integration
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The Services functionality communicates with the internship backend through service-management endpoints.
 
-## Learn More
+Representative operations include:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+~~~http
+GET    /auth/services/all
+POST   /auth/services/add
+GET    /auth/services/get/{id}
+DELETE /auth/services/delete/{id}
+PUT    /auth/services/edit/{id}
+PUT    /auth/services/is_published/{id}
+PUT    /auth/services/order
+~~~
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The exact request and response contract is defined by the internship backend.
+
+## Local Development
+
+Install dependencies:
+
+~~~bash
+npm install
+~~~
+
+Start the development server:
+
+~~~bash
+npm start
+~~~
+
+Environment-specific configuration should stay in local environment files and must not contain committed secrets.
+
+## Attribution
+
+This project is part of internship work at **BeeOnCode**.
+
+The application was built on top of an existing **Fuse React Admin** template. The repository is intended to show the functionality I implemented and integrated during the internship, not to claim ownership of the underlying template.
+
+## Status
+
+This repository is a record of internship work and may continue to receive updates as additional tasks are completed.
