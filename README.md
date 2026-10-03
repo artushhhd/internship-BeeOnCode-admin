@@ -2,49 +2,31 @@
 
 React admin-panel work completed during my BeeOnCode internship.
 
-This project is based on the **Fuse React Admin** template. My work focuses on implementing and integrating assigned functionality within the existing application.
+Built on the **Fuse React Admin** template, with focus on implementing assigned Services functionality and API integration.
 
-## Internship Work
+## Services
 
-### Services
-
-Implemented the Services management workflow:
-
-- Service list loading
-- Add and edit service
-- Delete service
+- Service list
+- Add / edit / delete
 - Publish / unpublish
-- Service ordering
+- Ordering
 - Form validation
-- Image/icon integration
+- Image / icon integration
 - REST API integration
 
 ## Screenshots
 
-### Services
+![Services](https://github.com/user-attachments/assets/c31b16e1-f746-4588-86ec-c1dbef691987)
 
-![Services list](https://github.com/user-attachments/assets/c31b16e1-f746-4588-86ec-c1dbef691987)
+![Add / Edit Service](https://github.com/user-attachments/assets/e73391f9-bdfa-4f0a-833c-b1c105651eca)
 
-### Add / Edit Service
-
-![Add or edit service](https://github.com/user-attachments/assets/e73391f9-bdfa-4f0a-833c-b1c105651eca)
-
-### Service Management
-
-![Service management](https://github.com/user-attachments/assets/9e87a5b8-c64f-4dd4-b737-67700c875b35)
+![Service Management](https://github.com/user-attachments/assets/9e87a5b8-c64f-4dd4-b737-67700c875b35)
 
 ## Tech Stack
 
-- React
-- JavaScript
-- Fuse React
-- REST API
-- HTTP API integration
-- Git
+React · JavaScript · Fuse React · REST API · Git
 
-## API Integration
-
-Representative service-management endpoints:
+## API
 
 ```http
 GET    /auth/services/all
@@ -56,30 +38,6 @@ PUT    /auth/services/is_published/{id}
 PUT    /auth/services/order
 ```
 
-The exact request and response contract is defined by the internship backend.
-
-## Local Development
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm start
-```
-
-Keep environment-specific configuration and secrets in local environment files.
-
 ## Attribution
 
-This project was developed as part of my internship at **BeeOnCode**.
-
-The application was built on top of the existing **Fuse React Admin** template. The repository documents the functionality I implemented and integrated during the internship.
-
-## Status
-
-Internship project — actively updated as additional tasks are completed.
+Developed during my internship at **BeeOnCode** on top of the **Fuse React Admin** template.
