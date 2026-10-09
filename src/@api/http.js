@@ -13,7 +13,14 @@ const $api = axios.create({
 });
 
 $api.interceptors.request.use((config) => {
-  config.headers.Authorization = `Bearer ${localStorage.getItem('jwt_access_token')}`;
+  const token = localStorage.getItem('jwt_access_token');
+
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  } else {
+    delete config.headers.Authorization;
+  }
+
   return config;
 });
 
@@ -24,7 +31,7 @@ $api.interceptors.response.use(
   async (error) => {
     const originalRequest = error.config;
 
-    if (error.response.status === 401 && error.config && !originalRequest._isRetry) {
+    if (error.response?.status === 401 && originalRequest && !originalRequest._isRetry) {
       originalRequest._isRetry = true;
       try {
         const response = await axios.get(`${API_URL}/auth/refresh`, { withCredentials: true });
